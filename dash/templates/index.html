@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new Affiliates</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <h2>Create new Affiliates</h2>
+    <form action="/register" method="post">
+        <label for="name_brand">Name Brand:</label>
+        <input type="text" id="name_brand" name="name_brand" required><br>
+
+        <label for="affiliate_manager">Manager:</label>
+        <input type="radio" id="tal" name="affiliate_manager" value="1" required>
+        <label for="tal">Tal</label>
+        <input type="radio" id="vadim" name="affiliate_manager" value="2" required>
+        <label for="vadim">Vadim</label><br>
+
+        <input type="submit" value="Register Affiliate">
+        
+    </form><br>
+
+    <H2>Create a new transacction on CRM</H2>
+    <form action="/create-transaction-on-crm" method="post">
+        <label for="bussinesUnitName">Bussines Unit Name</label>
+        <!-- <input type="text" id="bussinesUnitName" name="bussinesUnitName" required> -->
+        <select name="bussinesUnitName" id="bussinesUnitName">
+            <option value="Profitbitz">Profitbitz</option>
+            <option value="FxIntegral">FxIntegral</option>
+            <option value="Fxtrategy">Fxtrategy</option>
+            <option value="Solutraders">Solutraders</option>
+            <option value="Macrocien">Macrocien</option>
+            <option value="Inverlion">Inverlion</option>
+            <option value="Cryptrendy">Cryptrendy</option>
+            <option value="ALL Markets">ALL Markets</option>
+            <option value="BearInvester">BearInvester</option>
+            <option value="Noimarkets">Noimarkets</option>
+
+        </select><br>
+
+        <label for="tpId">TpId</label>
+        <input type="text" id="tpId" name="tpId" required><br>
+
+        <label for="amount">Amount</label>
+        <input type="text" id="amount" name="amount" required><br>
+            
+        <label for="type">Type</label>
+        <select name="type" id="type">
+            <option value="Deposit">Deposit</option>
+            <option value="Credit">Credit</option>
+            <option value="Withdrawal">Withdrawal</option>
+
+        </select><br>
+        <!-- <input type="text" id="type" name="type" required><br> -->
+
+        <label for="pspName">PspName</label>
+        <input type="text" id="pspName" name="pspName" required><br>
+
+        <label for="idTransaction">idTransaction</label>
+        <input type="text" id="idTransaction" name="idTransaction" required><br>
+
+        <input type="submit" value="SendTransaction">
+
+    </form><br>
+
+    <h2>Change Owner Lead</h2>
+    <form action="/change-owner-lead"  method="post"></form>
+        <label for="tpid">tpId</label>
+        <input type="text" id="tpid" name="tpid" required><br>
+
+        <label for="bussinesUnitName">bussinesUnitName</label>
+        <select name="bussinesUnitName" id="bussinesUnitName">
+            <option value="Profitbitz">Profitbitz</option>
+            <option value="FxIntegral">FxIntegral</option>
+            <option value="Fxtrategy">Fxtrategy</option>
+            <option value="Solutraders">Solutraders</option>
+            <option value="Macrocien">Macrocien</option>
+            <option value="Inverlion">Inverlion</option>
+            <option value="Cryptrendy">Cryptrendy</option>
+            <option value="ALL Markets">ALL Markets</option>
+            <option value="BearInvester">BearInvester</option>
+            <option value="Noimarkets">Noimarkets</option>
+        </select><br>
+
+        <label for="isRetencion">isRetencion</label>
+        <select name="isRetencion" id="isRetencion">
+            <option value="">false</option>
+            <option value="">true</option>
+        </select><br>
+
+        <input type="submit" value="Change Owner">
+
+
+</body>
+</html>
+
